@@ -118,7 +118,7 @@ public class WeatherApp {
 
     private static int findIndexOfCurrentTime(JSONArray timeList) {
         String currentTime = getCurrentTime();
-        //iterate through time list and see whic one matches current time and return the index
+        //iterate through time list and see which one matches current time and return the index
         for(int i = 0; i<timeList.size(); i++){
             String time = (String) timeList.get(i);
             if(time.equalsIgnoreCase(currentTime)){
@@ -184,7 +184,7 @@ public class WeatherApp {
         try {
             //create connection
             URL url = new URL(urlString);
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();  
 
             //sent request to API
             conn.setRequestMethod("GET");

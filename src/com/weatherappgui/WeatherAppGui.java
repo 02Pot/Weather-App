@@ -49,8 +49,6 @@ public class WeatherAppGui extends JFrame {
         JLabel temperatureText = new JLabel("10 C");
         temperatureText.setBounds(0, 350, 450, 54);
         temperatureText.setFont(new Font("Dialog", Font.BOLD, 48));
-
-        // center the text
         temperatureText.setHorizontalAlignment(SwingConstants.CENTER);
         add(temperatureText);
 
